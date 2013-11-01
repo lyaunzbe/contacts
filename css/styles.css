@@ -33,7 +33,7 @@ html, body{
   width: 50%;
   box-sizing: border-box;
   border-right: 1px solid rgb(218, 223, 229);
-  overflow:scroll;
+  overflow:auto;
 }
 
 #sidebar header .dash{
@@ -45,6 +45,7 @@ html, body{
   color:rgb(85, 85, 85);
   padding: 9px 35px 0px 20px;
   font-weight:700;
+  overflow: hidden;
 }
 
 #sidebar header .dash li{
@@ -59,20 +60,24 @@ html, body{
 #sidebar header .logo{
   font-weight:700;
   font-size:40px;
-  padding:18px 20px;
+  padding:27px 20px;
   width:255px;
   display: inline-block;
 }
 
 #sidebar header .logo .ico{
   border: 3px solid rgb(0, 0, 0);
-  border-radius: 37px;
-  padding: 6px 10px;
+  padding: 10px;
   transition: all .65s ease;
   -moz-transition: all .65s ease;
   -o-transition: all .65s ease;
-  -webkit-transition:all .65s ease;
+  -webkit-transition: all .65s ease;
   display: inline-block;
+  width: 30px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -11px;
+  border-radius: 36px;
 }
 
 #sidebar header .logo .ico:hover{
