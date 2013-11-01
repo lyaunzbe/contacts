@@ -45,7 +45,6 @@ html, body{
   color:rgb(85, 85, 85);
   padding: 9px 35px 0px 20px;
   font-weight:700;
-  overflow: hidden;
 }
 
 #sidebar header .dash li{
@@ -55,6 +54,8 @@ html, body{
 #sidebar header{
   width:100%;
   border-bottom:1px solid rgb(218, 223, 229);
+  overflow: hidden;
+
 }
 
 #sidebar header .logo{
