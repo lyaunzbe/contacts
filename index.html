@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <title>Contacts</title>
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <header>
+        <h2 class="logo">Contacts.
+          <span class="ico">☏</span>
+        </h2>
+
+        <ul class="dash">
+          <li>Total Contacts: <span class="tc"></span></li>
+          <li>Contacts Added: <span class="ca"></span></li>
+          <li>Contacts Removed: <span class="cr"></span></li>
+          <li>Imports: <span class="i"></span></li>
+          <li>Exports: <span class="e"></span></li>
+        </ul>
+      </header>
+      <div id="new-contact">
+        <span class="nc-first">First Name <input type="text"  name="first_name"></span>
+        <span class="nc-phone">Phone Number <input type="text"  name="phone_number"></span><br>
+        <span class="nc-last"> Last name <input type="text" name="last_name"></span>
+        <span class="add-contact">Add Contact</span>
+      </div>
+      <div id="cl-json">
+        <h3>JSON</h3>
+        <textarea class="json"></textarea>
+        <span class="import">Import</span>
+        <span class="export">Export</span>
+
+      </div>
+    </div>
+    <div id="contact-list">
+      <ul></ul>
+    </div>
+  </div>
+</body>
+<script src="./js/utils.js"></script>
+<script src="./js/sidebar.js"></script>
+<script src="./js/contactlist.js"></script>
+<script src="./js/main.js"></script>
+</html>
