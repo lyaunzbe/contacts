@@ -246,8 +246,6 @@ html, body{
 
 #contact-list ul li .remove-contact{
   float:right;
-  margin-top:25px;
-  margin-right:-125px;
   display: none;
   font-size:13px;
   letter-spacing: 1px;

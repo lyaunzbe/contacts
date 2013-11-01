@@ -12,7 +12,7 @@ ContactList = (function() {
                     <span class="last_name">'+data.last_name+ ',</span> \
                     <span class="first_name">'+data.first_name+'</span> \
                   </div> \
-                  <span class="phone">'+data.phone+'</span>\
+                  <span class="phone">'+data.phone+'</span><br>\
                   <span class="remove-contact">Remove</button></span>';
 
     var template = createFrag(html);
