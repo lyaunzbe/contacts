@@ -64,6 +64,7 @@ html, body{
   padding:27px 20px;
   width:255px;
   display: inline-block;
+  float:left;
 }
 
 #sidebar header .logo .ico{
