@@ -111,8 +111,8 @@ html, body{
   color:rgb(85, 85, 85);
 }
 
-#sidebar #new-contact span.nc-phone{
-  margin-left:10px;
+#sidebar #new-contact span.nc-last{
+  margin-left:40px;
 }
 
 #sidebar #new-contact input{
@@ -129,8 +129,15 @@ html, body{
   padding-right:8px;
 }
 
+#sidebar #new-contact input[name="phone_number"]{
+  margin-left: 45px;
+}
+
 #sidebar #new-contact input[name="last_name"]{
   margin-left:5px;
+}
+#sidebar #new-contact input[name="first_name"]{
+  margin-left:10px;
 }
 
 #sidebar #new-contact .add-contact,

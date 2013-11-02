@@ -31,7 +31,7 @@ ContactList = (function() {
   // General render function for contacts
   var render = function(data, ctx){
     // Clears the current list
-    $('#contact-list').innerHTML = null;
+    $('#contact-list').innerHTML = '';
     var ul = doc.createElement('ul');
 
     // If the data is populated, pass each element through the template
