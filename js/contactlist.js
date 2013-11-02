@@ -31,16 +31,17 @@ ContactList = (function() {
   // General render function for contacts
   var render = function(data, ctx){
     // Clears the current list
-    $('#contact-list ul').innerHTML = null;
+    $('#contact-list').innerHTML = null;
+    var ul = doc.createElement('ul');
 
     // If the data is populated, pass each element through the template
     // and render. Then bind the remove buttons.
     if(data.length){
       for(var i = 0; i < data.length; i++){
           var element = contactTemplate(data[i]);
-          console.log(element);
-          $('#contact-list ul').appendChild(element);
+          ul.appendChild(element);
       }
+      $('#contact-list').appendChild(ul);
       // Bind the remove buttons
       ctx.on('.remove-contact', 'click', 'removeContact');
     }
@@ -136,7 +137,6 @@ ContactList = (function() {
     init: function() {
       // Fetch stored data, if it exists
       this.contacts = readCookie('contacts') || [];
-      $('#contact-list').appendChild(doc.createElement('ul'));
       // Render
       render(this.contacts, this);
       // Initialize event tracker
