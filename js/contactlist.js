@@ -125,6 +125,7 @@ ContactList = (function() {
 
     // Exports a JSON representation of the contact list
     exportJSON: function(e) {
+      if(!this.contacts.length) return;
       // Convert contacts into JSON string
       var json = JSON.stringify({contacts : this.contacts}, null, '  ');
       // Inject string into textarea
