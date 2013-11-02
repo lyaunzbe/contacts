@@ -136,6 +136,7 @@ ContactList = (function() {
     init: function() {
       // Fetch stored data, if it exists
       this.contacts = readCookie('contacts') || [];
+      $('#contact-list').appendChild(doc.createElement('ul'));
       // Render
       render(this.contacts, this);
       // Initialize event tracker
