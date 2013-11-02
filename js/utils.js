@@ -52,7 +52,7 @@ function trigger(el, eventName, data){
     if(el.dispatchEvent){
         el.dispatchEvent(event);
     }else if(el.fireEvent && htmlEvents['on'+eventName]){// IE < 9
-        el.fireEvent('on'+event.eventType,event);// can trigger only real event (e.g. 'click')
+        el.fireEvent('on'+event.eventType,event);
     }else if(el[eventName]){
         el[eventName]();
     }else if(el['on'+eventName]){
