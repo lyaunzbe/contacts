@@ -90,12 +90,12 @@ function createCookie(name,value,days) {
     var expires = "; expires="+date.toGMTString();
   }
   else var expires = "";
-  document.cookie = name+"="+value+expires+"; path=/";
+  doc.cookie = name+"="+value+expires+"; path=/";
 }
 
 function readCookie(name) {
   var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
+  var ca = doc.cookie.split(';');
   for(var i=0;i < ca.length;i++) {
     var c = ca[i];
     while (c.charAt(0)==' ') c = c.substring(1,c.length);
